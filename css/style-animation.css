@@ -1,0 +1,89 @@
+@keyframes move10 {
+    from {width: 0%;}
+    to {width: 10%;}
+}
+@keyframes move20 {
+    from {width: 0%;}
+    to {width: 20%;}
+}
+@keyframes move30 {
+    from {width: 0%;}
+    to {width: 30%;}
+}
+@keyframes move40 {
+    from {width: 0%;}
+    to {width: 10%;}
+}
+@keyframes move50 {
+    from {width: 0%;}
+    to {width: 50%;}
+}
+@keyframes move60 {
+    from {width: 0%;}
+    to {width: 60%;}
+}
+@keyframes move70 {
+    from {width: 0%;}
+    to {width: 70%;}
+}
+@keyframes move80 {
+    from {width: 0%;}
+    to {width: 80%;}
+}
+@keyframes move90 {
+    from {width: 0%;}
+    to {width: 90%;}
+}
+@keyframes move100 {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+.talent-item10{
+    fill:#5BC5E5;
+    animation: move10 2s forwards;
+}
+.talent-item20{
+    fill:#5BC5E5;
+    animation: move20 2s forwards;
+}
+.talent-item30{
+    fill:#53B4D1;
+    animation: move30 2s forwards;
+}
+.talent-item40{
+    fill:#53B4D1;
+    animation: move40 2s forwards;
+}
+.talent-item50{
+    fill:#53B4D1;
+    animation: move50 2s forwards;
+}
+.talent-item60{
+    fill:#53B4D1;
+    animation: move60 2s forwards;
+}
+.talent-item70{
+    fill:#53B4D1;
+    animation: move70 2s forwards;
+}
+.talent-item80{
+    fill:#4BA2BC;
+    animation: move80 2s forwards;
+}
+.talent-item90{
+    fill:#4BA2BC;
+    animation: move90 2s forwards;
+}
+
+/* --------------------- Animação Opacidade ------------*/
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+
+.animation_opacity{
+    animation:  opacity 3s forwards;
+}
+

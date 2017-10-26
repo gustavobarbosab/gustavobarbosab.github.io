@@ -1,0 +1,408 @@
+body, h1,h2,p,ul,li,a {
+	margin: 0px;
+	padding: 0px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+html, body{    
+    background: black;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* ------------------------------------------------------------- */
+/* -------------------- Text Title ------------------- */
+/* ------------------------------------------------------------- */
+.title_text{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto; 
+    color:#60C9E8;
+    padding-top:20px;
+}
+
+.title_text h2{
+    font-size: 2em;
+}
+
+.line{
+    background: #60C9E8;
+    height: 2px;
+    width: 40%;
+    margin: 10px;
+}
+
+
+
+/* ------------------------------------------------------------- */
+/* ------------------------------ NAVIGATION ------------------------------ */
+/* ------------------------------------------------------------- */
+
+nav{
+    background: rgba(28,28,28,0.7);
+    width: 100%;
+    border-bottom: 2px solid #60C9E8;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    color: white;
+    
+}
+
+.nav-content {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 1em;
+    padding: 0px 5px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-content img{
+    max-width: 100px;
+    display: block;
+    margin: 5px 10px;
+}
+
+.nav-content ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-self: center;
+}
+
+.nav-content li{
+    margin: 10px 70px 10px 70px;
+    
+}
+
+
+.nav-content li:hover{
+    transition: color 1s ease-out;
+    color:#69DDFF;
+    border-bottom: .5px solid #69DDFF;
+    
+    
+}
+/* ------------------------------------------------------------- */
+/* ------------------------------ BANNER ------------------------------ */
+/* ------------------------------------------------------------- */
+
+.banner{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 115px;
+    background-image:url(../imgs/back2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center; 
+    padding: 10% 0 10% 0;
+}
+
+.content_banner{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start;
+    margin:0 auto;
+    color: white;
+}
+.foto_banner{
+    padding-top: 10px;
+}
+
+.foto_banner img{
+    min-width: 300px   ;
+}
+
+.text_banner{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+        
+}
+
+/* --------------------- Config Banner Texts -------------------- */
+.banner p{
+    margin: 15px 0 0 15px;
+    font-size: 1em;
+    word-spacing: .3em;
+    font-style: italic;
+}
+
+.banner h1{
+    margin-top:10px; 
+    font-weight: 700;
+    font-family: Raleway, sans-serif;
+}
+/* ------------------------------------------------------------- */
+
+/*----------------- Button Config ---------------------*/
+
+.btn{
+    border-style: none;
+    max-height: 50px;
+    margin: 10px 20px 10px 0;
+    align-self: flex-end;
+    background-color: transparent;
+    padding: 15px 20px 20px 20px;
+    color:aqua;
+    border: 2px aqua solid;
+    font-weight: 700;
+}
+
+.btn:hover{
+    border: 2px #7CD2EC solid;
+    background-color: transparent;
+}
+
+/*----------------------------------------------------*/
+
+
+/* ------------------------------------------------------------- */
+/* ------------------------------ Skills ------------------------------ */
+/* ------------------------------------------------------------- */
+.skills{
+    background: #E8E8E8;
+    width: 100%;
+    color: black;
+}
+.talents{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin:0 auto;
+    padding: 20px 0 20px 0;
+    
+}
+.talents h2{
+    font-size: 1em;
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.talent-item-back{
+    stroke:#D3D3D3;
+    fill:#D3D3D3;
+    stroke-width:5;  
+}
+
+
+/*------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------- */
+/* ------------------------------ Experience ------------------------------ */
+/* ------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------- */
+/* ------------------------------ Portfolio ------------------------------ */
+/* ------------------------------------------------------------- */
+
+.portfolio{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.portfolio h2{
+    margin:0px;
+}
+
+.portfolio-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding: 20px 0;
+}
+
+.portfolio-content img{
+    display: block;
+    max-width:300px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.portfolio img:hover{
+    opacity:0.6;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- */
+/* ------------------------------ Footer ------------------------------ */
+/* ------------------------------------------------------------- */
+
+footer{
+    border-top: 2px solid #60C9E8;
+    background: rgba(28,28,28,1);
+    width: 100%;
+    color: white;
+    padding:30px 0;
+}
+
+.footer-content p{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.footer-content li{
+    margin-top: 20px;
+    font-size: .8em;
+}
+
+.social-net{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.social-net img{ 
+    margin: 10px 20px;
+    max-width:50%;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.social-net img:hover{
+    opacity:0.6;
+}
+
+
+
+
+/* ----------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 910px) {
+    .nav-content{
+        justify-content:  center;
+    }
+    .banner{
+        margin-top:280px;
+    }
+}
+
+
+
+
