@@ -16,7 +16,7 @@ export default function Greetings(props: GreetingsProps) {
             <div className="grow">
                 <div className="mx-auto max-w-2xl lg:mx-0">
                     <h2 className="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl dark:text-white">
-                        Hi, I'm Gustavo.
+                        Hi, I&apos;m Gustavo.
                     </h2>
                     <p className="mt-8 text-lg font-medium text-pretty text-gray-700 sm:text-xl/8 dark:text-gray-300">
                         Android-focused Software Engineer with over 4 years of experience leading squads, 7 years delivering robust applications, and optimizing UX/UI to boost engagement metrics.
