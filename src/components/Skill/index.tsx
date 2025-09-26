@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image"
+import { Fade } from "react-swift-reveal";
 
 interface SkillProps {
     largeImageSrc: string,
@@ -12,7 +15,7 @@ export default function Skill(props: SkillProps) {
 
     const imageSection = <div className="flex items-center justify-center p-5">
         <Image
-        className="my-auto"
+            className="my-auto"
             width={350}
             height={350}
             src={props.largeImageSrc}
@@ -34,11 +37,13 @@ export default function Skill(props: SkillProps) {
         ? [imageSection, descriptionSection]
         : [descriptionSection, imageSection];
 
-    return <>
-        <div className={props.className} >
-            <div className="md:flex md:row gap-3">
-                {sections}
+    return (
+        <Fade right={!props.imageOnTheLeft} left={props.imageOnTheLeft} duration={2000} distance="40px">
+            <div className={props.className} >
+                <div className="md:flex md:row gap-3">
+                    {sections}
+                </div>
             </div>
-        </div>
-    </>
+        </Fade>
+    );
 }

@@ -3,11 +3,13 @@
 :root {
   --dark: #13313;
   --light: #dedede;
+  --primary: #4655ff;
 }
 
 @theme inline {
   --color-dark: var(--dark);
   --color-light: var(--light);
+  --color-primary: var(--primary);
   --color-background: var(--dark);
   --color-foreground: var(--light);
   --font-sans: var(--font-geist-sans);

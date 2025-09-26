@@ -3,6 +3,7 @@ import BackgroundBubble from '../components/BackgroundBubble';
 import Greetings from '@/components/Greetings';
 import ProfileImage from '@/components/ProfileImage';
 import Skill from '@/components/Skill';
+import Footer from '@/components/Footer';
 
 const navBar = [
   {
@@ -20,9 +21,21 @@ const greetings = {
   subTitle: " I'm Gustavo Barbosa",
   message: "Android-focused Software Engineer with over 4 years of experience leading squads, 7 years delivering robust applications, and optimizing UX/UI to boost engagement metrics.",
   links: [
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/gustavobarbosab' },
-    { name: 'GitHub', url: 'https://www.github.com/gustavobarbosab' },
-    { name: 'E-mail', url: 'mailto:gustavobarbosabarreto@gmail.com' },
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/gustavobarbosab',
+      icon: "/icons/linkedin.svg"
+    },
+    {
+      name: 'GitHub',
+      url: 'https://www.github.com/gustavobarbosab',
+      icon: "/icons/github.svg"
+    },
+    {
+      name: 'E-mail',
+      url: 'mailto:gustavobarbosabarreto@gmail.com',
+      icon: "/icons/mail.svg"
+    },
   ]
 }
 
@@ -66,7 +79,7 @@ export default function Example() {
         <div className='lg:flex justify-center w-3/4 mx-auto md:py-50'>
           <ProfileImage
             src="/images/profile.jpeg"
-            className='lg:grow grow place-items-center'
+            className='md:grow place-items-center'
           />
           <Greetings
             title={greetings.title}
@@ -92,10 +105,7 @@ export default function Example() {
         descriptions={leadershipSkills.descriptions}
         largeImageSrc={leadershipSkills.imageUrl} />
 
-      <footer className='mx-auto px-15'>
-        <hr className="border-t border-gray-800 my-1"></hr>
-        <p className='dark:text-white text-gray-900 font-semibold text-pretty text-center py-10 text-xl'>Made with ❤️ by Gustavo Barbosa</p>
-      </footer>
+      <Footer/>
     </div>
   )
 }
