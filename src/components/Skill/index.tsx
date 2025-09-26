@@ -14,7 +14,7 @@ interface SkillProps {
 export default function Skill(props: SkillProps) {
 
     const imageSection = (
-        <div key="image-section" id="skills" className="flex items-center justify-center p-5">
+        <div key="image-section" className="flex items-center justify-center p-5">
             <Image
                 className="my-auto"
                 width={350}

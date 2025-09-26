@@ -91,19 +91,21 @@ export default function Example() {
         </div>
       </div>
 
-      <Skill
-        className="xl:w-1/2 w-3/4 text-gray-900 mx-auto my-20"
-        text={androidSkills.text}
-        imageOnTheLeft={false}
-        descriptions={androidSkills.descriptions}
-        largeImageSrc={androidSkills.imageUrl} />
+      <div id='skills'>
+        <Skill
+          className="xl:w-1/2 w-3/4 text-gray-900 mx-auto my-20"
+          text={androidSkills.text}
+          imageOnTheLeft={false}
+          descriptions={androidSkills.descriptions}
+          largeImageSrc={androidSkills.imageUrl} />
 
-      <Skill
-        className="xl:w-1/2 w-3/4 text-gray-900 mx-auto my-20"
-        text={leadershipSkills.text}
-        imageOnTheLeft={true}
-        descriptions={leadershipSkills.descriptions}
-        largeImageSrc={leadershipSkills.imageUrl} />
+        <Skill
+          className="xl:w-1/2 w-3/4 text-gray-900 mx-auto my-20"
+          text={leadershipSkills.text}
+          imageOnTheLeft={true}
+          descriptions={leadershipSkills.descriptions}
+          largeImageSrc={leadershipSkills.imageUrl} />
+      </div>
 
       <Footer />
     </div>
