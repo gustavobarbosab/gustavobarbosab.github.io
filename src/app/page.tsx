@@ -12,7 +12,7 @@ const navBar = [
   },
   {
     name: "Skills",
-    href: "#"
+    href: "#skills"
   },
 ]
 
@@ -105,7 +105,7 @@ export default function Example() {
         descriptions={leadershipSkills.descriptions}
         largeImageSrc={leadershipSkills.imageUrl} />
 
-      <Footer/>
+      <Footer />
     </div>
   )
 }
