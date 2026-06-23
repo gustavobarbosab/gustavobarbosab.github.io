@@ -14,6 +14,10 @@ const navBar = [
     name: "Skills",
     href: "#skills"
   },
+  {
+    name: "Blog",
+    href: "/blog"
+  },
 ]
 
 const greetings = {
